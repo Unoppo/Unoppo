@@ -1,18 +1,18 @@
 // Functions?
 function appendToDisplay(input){
-    appendToDisplay.value += input;
+    display.value += input
 }
 
 function clearDisplay(){
-    clearDisplay.value = ();
+    display.value = ''
 }
 
 function calculate(){
     try{
-        clearDisplay.value = eval(display);
+        display.value = eval(display.value)
     }
     catch(error){
-        display.value = 'Error'
+        display.value = 'Error!'
     }
 }
 
